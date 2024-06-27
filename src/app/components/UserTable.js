@@ -30,21 +30,7 @@ export default function UserTable({ users, roles, onEdit, onDelete }) {
 
   const renderUsersTable = () => (
     <>
-      <div className="flex mb-4">
-        {/* <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search users"
-          className="mr-2 px-3 py-2 border rounded"
-        />
-        <button
-          onClick={() => alert("Filter button clicked")}
-          className="px-4 py-2 bg-blue-500 text-white rounded"
-        >
-          Filter
-        </button> */}
-
+      <div className="flex mb-4 bg-white p-2 rounded">
         {/* Search Bar */}
         <div className="ml-2">
           <div className="relative">
@@ -185,7 +171,9 @@ export default function UserTable({ users, roles, onEdit, onDelete }) {
         <ul className="flex border-b">
           <li
             className={`cursor-pointer py-2 px-4 ${
-              activeTab === "users" ? "border-b-2 border-blue-500" : ""
+              activeTab === "users"
+                ? "border-b-2 border-blue-500 text-blue-500"
+                : ""
             }`}
             onClick={() => setActiveTab("users")}
           >
@@ -193,7 +181,9 @@ export default function UserTable({ users, roles, onEdit, onDelete }) {
           </li>
           <li
             className={`cursor-pointer py-2 px-4 ${
-              activeTab === "roles" ? "border-b-2 border-blue-500" : ""
+              activeTab === "roles"
+                ? "border-b-2 border-blue-500 text-blue-500"
+                : ""
             }`}
             onClick={() => setActiveTab("roles")}
           >
