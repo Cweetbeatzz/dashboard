@@ -9,7 +9,7 @@ export default function Sidebar() {
       <nav>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           <svg
             className="h-5 w-5 mr-2"
@@ -29,7 +29,7 @@ export default function Sidebar() {
         </a>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           <svg
             className="h-5 w-5 mr-2"
@@ -49,12 +49,12 @@ export default function Sidebar() {
         </a>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           {/* Notifications */}
           <button className="text-gray-400 hover:text-gray-500">
             <svg
-              className="h-5 w-5"
+              className="h-5 w-5 mr-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ export default function Sidebar() {
         </a>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           <svg
             className="h-5 w-5 mr-2"
@@ -90,7 +90,7 @@ export default function Sidebar() {
         </a>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           <svg
             className="h-5 w-5 mr-2"
@@ -110,7 +110,7 @@ export default function Sidebar() {
         </a>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           <svg
             className="h-5 w-5 mr-2"
@@ -130,7 +130,7 @@ export default function Sidebar() {
         </a>
         <a
           href="#"
-          className="flex items-center justify-between py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
+          className="flex items-center  py-2.5 px-4 rounded transition duration-200 text-gray-400 hover:text-blue-700 hover:bg-blue-100"
         >
           {/* <svg
             className="h-5 w-5 mr-2"
