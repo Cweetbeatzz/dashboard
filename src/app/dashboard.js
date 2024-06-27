@@ -65,7 +65,7 @@ import Sidebar from "./components/Sidebar";
 import UserTable from "./components/UserTable";
 import UserModal from "./components/UserModal";
 
-const API_URL = "https://caf1743a0f1f7ea7ef88.free.beeceptor.com/api/users/";
+const API_URL = "https://ca6a411f0de3fcc4dc1a.free.beeceptor.com/api/users/";
 
 export default function Dashboard() {
   const [roles, setRoles] = useState([
