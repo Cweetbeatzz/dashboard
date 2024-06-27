@@ -68,6 +68,13 @@ import UserModal from "./components/UserModal";
 const API_URL = "https://caf1743a0f1f7ea7ef88.free.beeceptor.com/api/users/";
 
 export default function Dashboard() {
+  const [roles, setRoles] = useState([
+    { id: "Admin", name: "Admin" },
+    { id: "Manager", name: "Manager" },
+    { id: "Editor", name: "Editor" },
+    { id: "Viewer", name: "Viewer" },
+    { id: "Guest", name: "Guest" },
+  ]);
   const [users, setUsers] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
@@ -137,9 +144,18 @@ export default function Dashboard() {
         <Header />
         <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
           <div className="container mx-auto px-6 py-8">
+            <p class="text-gray-500 text-sm mb-6">
+              Settings / Users & Roles Settings
+            </p>
+
+            <h3 class="text-black font-bold">Users & Roles</h3>
+            <p class="text-gray-500 text-sm mb-7">
+              Manage all users in your business
+            </p>
+
             <button
               onClick={handleCreateUser}
-              className="mb-4 bg-blue-500 text-white px-4 py-2 rounded"
+              className="mb-4 bg-blue-500 text-white px-4 py-2 rounded float-right"
             >
               New User
             </button>
@@ -150,6 +166,7 @@ export default function Dashboard() {
             ) : (
               <UserTable
                 users={users}
+                roles={roles}
                 onEdit={handleEditUser}
                 onDelete={handleDeleteUser}
               />
