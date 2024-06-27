@@ -9,9 +9,14 @@ export default function Header() {
           {/* Left side: Logo and Search */}
           <div className="flex items-center">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <Image src="/logo.png" alt="Logo" width={32} height={32} />
-            </div>
+
+            <Image
+              src="/logo.png"
+              alt="User"
+              width={32}
+              height={32}
+              className="rounded"
+            />
 
             {/* Search Bar */}
             <div className="ml-6">
@@ -117,7 +122,7 @@ export default function Header() {
             {/* User Profile */}
             <div className="flex items-center">
               <Image
-                src="/user-avatar.png"
+                src="/Ellipse 775.png"
                 alt="User"
                 width={32}
                 height={32}
